@@ -102,6 +102,26 @@ a {
   background-position: center;
 }
 
+.herodos {
+  min-height: 650px;
+  display: flex;
+  margin-top: 200px;
+  align-items: center;
+  padding: 80px 10%;
+  color: white;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(42, 29, 20, 0.88),
+      rgba(42, 29, 20, 0.35)
+    ),
+    url("/imagenes/Mesa2.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
 .hero-contenido {
   max-width: 650px;
 }
@@ -208,9 +228,7 @@ a {
 .seccion-artesanal {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: center;
-  background: #eadbc8;
+  align-items: start;
 }
 
 .seccion-artesanal > div:first-child {

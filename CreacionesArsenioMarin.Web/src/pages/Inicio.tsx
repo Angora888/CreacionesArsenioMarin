@@ -62,19 +62,21 @@ function Inicio() {
 
       <section className="seccion seccion-artesanal">
         <div>
-          <p className="etiqueta">HECHO A MANO</p>
-
           <h2>
-            Madera que cuenta
+            Donde la madera se convierte en historia.
             <br />
-            una historia.
           </h2>
 
           <p>
-            Cada pieza de Creaciones Arsenio Marin
-            es elaborada con atención a los detalles,
-            buscando que sea algo especial para quien
-            la recibe.
+
+Desde 1985, nuestra familia ha encontrado en la madera una forma de crear, trabajar y dejar huella. <br /> <br />
+Todo comenzó con mi papá, quien durante muchos años se dedicó con pasión a la elaboración de souvenirs y diferentes trabajos en madera. Con sus manos, paciencia y dedicación fue construyendo no solo piezas únicas, sino también un legado que hoy queremos continuar.<br /> <br />
+Con el paso de los años, decidimos darle un nuevo rumbo a esta tradición familiar, combinando la belleza natural de la madera con la creatividad y versatilidad de la resina epóxica.<br /> <br />
+Así nacen nuestras mesas de río, piezas únicas en las que cada veta, cada forma y cada detalle de la madera se encuentra con el color y la transparencia de la resina para crear muebles que no existen dos veces iguales.<br /> <br />
+Nuestro propósito es crear más que una mesa: queremos ofrecer piezas únicas, hechas con dedicación, carácter y una historia detrás.<br /> <br />
+Cada proyecto es elaborado de manera artesanal, cuidando cada detalle desde la selección de la madera hasta el acabado final, para que nuestros clientes puedan llevar a sus hogares una pieza que perdure en el tiempo.
+Más de 40 años de experiencia, una nueva generación y muchas historias por crear.
+Bienvenidos a nuestro emprendimiento familiar, donde la madera, la resina y la pasión por crear se encuentran.
           </p>
 
           <Link to="/productos" className="boton-secundario">
@@ -82,8 +84,7 @@ function Inicio() {
           </Link>
         </div>
 
-        <div className="artesanal-imagen">
-          🪵
+        <div className="">
         </div>
       </section>
     </main>
