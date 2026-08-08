@@ -1,0 +1,299 @@
+:root {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #33251c;
+  background: #f8f4ed;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f8f4ed;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* NAV */
+
+.barra-navegacion {
+  height: 78px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fffaf3;
+  border-bottom: 1px solid #e6d9c8;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo span {
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.logo strong {
+  font-size: 21px;
+  margin-top: 5px;
+}
+
+.barra-navegacion nav {
+  display: flex;
+  gap: 35px;
+}
+
+.barra-navegacion nav a {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.barra-navegacion nav a:hover {
+  color: #9a6238;
+}
+
+.carrito {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  padding: 80px 10%;
+  color: white;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(42, 29, 20, 0.88),
+      rgba(42, 29, 20, 0.35)
+    ),
+    url("/imagenes/MesaResina.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-contenido {
+  max-width: 650px;
+}
+
+.hero-etiqueta,
+.etiqueta {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: clamp(48px, 7vw, 88px);
+  line-height: 0.95;
+  margin: 25px 0;
+  font-weight: normal;
+}
+
+.hero-descripcion {
+  font-family: Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.7;
+  max-width: 500px;
+}
+
+.boton-principal,
+.boton-secundario {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 28px;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+.boton-principal {
+  background: #fffaf3;
+  color: #33251c;
+}
+
+.boton-principal:hover {
+  background: #e8d5bc;
+}
+
+/* SECCIONES */
+
+.seccion {
+  padding: 100px 10%;
+}
+
+.seccion-titulo {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 60px;
+}
+
+.seccion h2 {
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: normal;
+  margin: 15px 0;
+}
+
+.seccion-titulo > p:last-child {
+  font-family: Arial, sans-serif;
+  color: #715f50;
+  line-height: 1.7;
+}
+
+/* CATEGORIAS */
+
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.categoria {
+  background: #fffaf3;
+  padding: 45px 30px;
+  text-align: center;
+  border: 1px solid #e6d9c8;
+}
+
+.categoria-icono {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.categoria h3 {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.categoria p {
+  font-family: Arial, sans-serif;
+  color: #715f50;
+  line-height: 1.6;
+}
+
+/* ARTESANAL */
+
+.seccion-artesanal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  background: #eadbc8;
+}
+
+.seccion-artesanal > div:first-child {
+  max-width: 550px;
+}
+
+.seccion-artesanal p {
+  font-family: Arial, sans-serif;
+  line-height: 1.8;
+  color: #5c4a3b;
+}
+
+.boton-secundario {
+  border: 1px solid #5c4030;
+}
+
+.boton-secundario:hover {
+  background: #5c4030;
+  color: white;
+}
+
+.artesanal-imagen {
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 130px;
+  background: #9a704e;
+}
+
+/* FOOTER */
+
+.pie-pagina {
+  padding: 50px 10%;
+  background: #2e2119;
+  color: #f8f4ed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pie-pagina h3 {
+  font-size: 23px;
+  font-weight: normal;
+}
+
+.pie-pagina p {
+  font-family: Arial, sans-serif;
+  color: #cbb9a7;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+  .barra-navegacion {
+    padding: 0 5%;
+  }
+
+  .barra-navegacion nav {
+    display: none;
+  }
+
+  .hero {
+    padding: 70px 7%;
+    min-height: 580px;
+  }
+
+  .seccion {
+    padding: 70px 7%;
+  }
+
+  .categorias {
+    grid-template-columns: 1fr;
+  }
+
+  .seccion-artesanal {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .pie-pagina {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
