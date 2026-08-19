@@ -73,7 +73,7 @@ public class ImagenesController : ControllerBase
                 connectionString,
                 containerName);
 
-        await containerClient.CreateIfNotExistsAsync(
+        await containerClient.CreateIfNotExistsAsync( 
             PublicAccessType.Blob);
 
         var extension = Path.GetExtension(archivo.FileName);
