@@ -2,6 +2,7 @@
 using CreacionesArsenioMarin.Api.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CreacionesArsenioMarin.Api.Controllers;
 
@@ -26,6 +27,7 @@ public class CategoriasController : ControllerBase
     }
 
     [HttpPost]
+    [Authorize(Roles = "Admin")]
     public async Task<ActionResult<Categorias>> CrearCategoria(
         Categorias categoria)
     {

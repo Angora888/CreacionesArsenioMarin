@@ -17,4 +17,15 @@ public class AppDbContext : DbContext
     public DbSet<DetallePedido> DetallesPedido => Set<DetallePedido>();
 
     public DbSet<Pedido> Pedidos => Set<Pedido>();
+
+    public DbSet<Usuario> Usuarios => Set<Usuario>();
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+
+        modelBuilder.Entity<Usuario>()
+            .HasIndex(u => u.Email)
+            .IsUnique();
+    }
 }
