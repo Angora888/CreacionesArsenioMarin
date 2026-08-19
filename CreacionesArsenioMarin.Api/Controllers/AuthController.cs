@@ -100,6 +100,15 @@ public class AuthController : ControllerBase
         });
     }
 
+    [HttpGet("test")]
+    public IActionResult Test()
+    {
+        return Ok(new
+        {
+            mensaje = "AuthController activo"
+        });
+    }
+
     private string GenerarToken(Usuario usuario)
     {
         var jwtKey = _configuration["Jwt:Key"]
