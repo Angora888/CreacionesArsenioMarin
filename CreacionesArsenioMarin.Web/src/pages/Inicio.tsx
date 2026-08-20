@@ -28,7 +28,7 @@ function Inicio() {
           <p className="etiqueta">DESCUBRE</p>
           <h2>Nuestras creaciones</h2>
           <p>
-            Piezas de madera pensadas para darle un toque
+            Piezas de madera y resina pensadas para darle un toque
             especial a cada espacio.
           </p>
         </div>
